@@ -1,0 +1,39 @@
+
+# Python 缓存
+__pycache__/
+*.py[cod]
+
+# 虚拟环境
+.venv/
+venv/
+env/
+
+# PyCharm 配置
+.idea/
+
+# PH2 数据集
+dataset/
+
+# 预测结果
+results/predictions/
+
+# 模型权重：只保留最终模型
+checkpoints/*.pth
+checkpoints/*.pt
+checkpoints/*.ckpt
+!checkpoints/best_unet_aug.pth
+
+# 环境变量和密钥
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+
+# 日志和临时文件
+*.log
+*.tmp
+*.bak
+
+# Windows 系统文件
+Thumbs.db
+desktop.ini
